@@ -1,8 +1,11 @@
 from docxtpl import DocxTemplate
 from uuid import uuid4
 
-doc = DocxTemplate("../../9x9.docx")
-context = { 'fact1' : "Arild er min morfar" }
-doc.render(context)
+from __init__ import get_random_facts
+
+doc = DocxTemplate("../../3x4.docx")
+facts = get_random_facts()
+
+doc.render(facts)
 
 doc.save(f"../../out/{uuid4()}.docx")
