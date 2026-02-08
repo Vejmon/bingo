@@ -6,7 +6,7 @@ authors = [
     {name = "Vejmon",email = "vemundhell@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.10 <3.11"
 dependencies = [
         "docxtpl[subdoc] (>=0.20.2,<0.21.0)"
 ]
@@ -15,5 +15,5 @@ dependencies = [
 packages = [{include = "bingo", from = "src"}]
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core>=2.0.0,<3.0.0", "setuptools"]
 build-backend = "poetry.core.masonry.api"

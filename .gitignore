@@ -24,6 +24,8 @@ bin/
 *.ipr
 out/
 !out/.keep
+tmp/
+!tmp/.keep
 !**/src/main/**/out/
 !**/src/test/**/out/
 
